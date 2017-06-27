@@ -1,7 +1,18 @@
-body {
-  font-family: 'Roboto', sans-serif;
+html{
+  position: relative;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom:50px;
+}
+
+
+.container{
+  max-width: 880px;
+}
+
+/* A head of the game */
 .page-header {
   text-align: center;
 }
@@ -10,5 +21,26 @@ body {
   font-size: 5vw;
 }
 
-.fn-mainvid{
+.jumbotron h1 {
+  font-size: 50px;
+}
+
+.navbar-brand{
+  height: 20px;
+}
+
+/* Fun with footers */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 50px;
+  background-color: #fe7a32;
+}
+
+.footer p{
+  color: #ffffff;
+  margin-top: 15px;
 }
