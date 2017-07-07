@@ -29,6 +29,12 @@ body {
   height: 20px;
 }
 
+.btn-xxl {
+    padding: 10px 20px;
+    font-size: 23px;
+    border-radius: 10px;
+}
+
 /* Fun with footers */
 
 .footer {
