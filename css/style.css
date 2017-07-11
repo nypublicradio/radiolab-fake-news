@@ -3,7 +3,7 @@ html{
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Carrois Gothic', sans-serif;
   margin-bottom:50px;
 }
 
@@ -15,10 +15,12 @@ body {
 /* A head of the game */
 .page-header {
   text-align: center;
+  border-bottom: none;
 }
 #fn-title {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 5vw;
+  text-align: center;
 }
 
 .jumbotron h1 {
@@ -32,7 +34,8 @@ body {
 .btn-xxl {
     padding: 10px 20px;
     font-size: 23px;
-    border-radius: 10px;
+    border-radius: 8px;
+    margin: auto;
 }
 
 /* Fun with footers */

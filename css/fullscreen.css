@@ -1,0 +1,84 @@
+body {
+  background: #000;
+}
+a {
+  color: #ff0;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+}
+.cover .hi {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+  width:100%;
+  z-index: 2;
+}
+.cover .hi span {
+  color: #0047b3;
+}
+.cover .hi em {
+  font-style: normal;
+}
+.cover .hi em.hidden {
+  display: none;
+}
+.tv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.tv .screen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  margin: auto;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.tv .screen.active {
+  opacity:1;
+}
+
+#fn-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 8vw;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+#fn-title:hover {
+  color: #fe7a32;
+}
+.btn-transparent {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  font-size: 3vw
+}
+
+.btn-transparent:hover {
+  background: #fff;
+  color: #fe7a32;
+  border: 2px solid #fff;
+}
