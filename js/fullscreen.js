@@ -18,7 +18,6 @@ function onYouTubePlayerAPIReady(){
 
 function onPlayerReady(){
   tv.loadVideoById(vid[currVid]);
-  tv.mute();
 }
 
 function onPlayerStateChange(e) {
@@ -42,11 +41,11 @@ function vidRescale(){
   var w = $(window).width()+200,
     h = $(window).height()+200;
 
-  if (w/h > 16/9){
-    tv.setSize(w, w/16*9);
+  if (w/h > 4/3){
+    tv.setSize(w, w/4*3);
     $('.tv .screen').css({'left': '0px'});
   } else {
-    tv.setSize(h/9*16, h);
+    tv.setSize(h/3*4, h);
     $('.tv .screen').css({'left': -($('.tv .screen').outerWidth()-w)/2});
   }
 }
@@ -55,6 +54,7 @@ $(window).on('load resize', function(){
   vidRescale();
 });
 
+// Volume Controls
 $('#volume').on('click', function(){
   $('#tv').toggleClass('mute');
   if($('#tv').hasClass('mute')){
@@ -62,6 +62,8 @@ $('#volume').on('click', function(){
   } else {
     tv.unMute();
   }
+	$('#volume').toggleClass('glyphicon-volume-off')
+	$('#volume').toggleClass('glyphicon-volume-up');
 });
 
 $('.hi span:last-of-type').on('click', function(){

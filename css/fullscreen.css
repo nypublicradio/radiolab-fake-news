@@ -61,7 +61,7 @@ a {
 
 #fn-title {
   font-family: 'Raleway', sans-serif;
-  font-size: 8vw;
+  font-size: 7vw;
   font-weight: bolder;
   text-align: center;
   text-decoration: none;
@@ -74,6 +74,7 @@ a {
   background: transparent;
   color: #fff;
   border: 2px solid #fff;
+  font-size: 20px;
   font-size: 1.5vw;
   padding: 10px 20px;
   border-radius: 8px;
@@ -88,11 +89,13 @@ a {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
-  text-align: center;
+  text-align: right;
 }
 
 .footer p{
   color: #ffffff;
   font-size: 20px;
+}
+.container{
+  width: 100%;
 }
