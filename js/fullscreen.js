@@ -5,7 +5,7 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 var tv,
 		playerDefaults = {autoplay: 0, autohide: 1, modestbranding: 0, rel: 0, showinfo: 0, controls: 0, disablekb: 1, enablejsapi: 0, iv_load_policy: 3};
 var vid = [
-			{'videoId': 'lbwlVwNWLzU', 'startSeconds': 14, 'endSeconds': 1843, 'suggestedQuality': 'hd720'},
+			{'videoId': 'SenOwVczrK8', 'startSeconds': 7, 'endSeconds': 76, 'suggestedQuality': 'hd720'},
 		],
 		randomVid = Math.floor(Math.random() * vid.length),
     currVid = randomVid;
@@ -55,9 +55,8 @@ $(window).on('load resize', function(){
   vidRescale();
 });
 
-$('.hi span:nth-of-type(2)').on('click', function(){
+$('#volume').on('click', function(){
   $('#tv').toggleClass('mute');
-  $('.hi em:first-of-type').toggleClass('hidden');
   if($('#tv').hasClass('mute')){
     tv.mute();
   } else {

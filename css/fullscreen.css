@@ -15,7 +15,7 @@ a {
 }
 .cover .hi {
   position: absolute;
-  top: 40%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
@@ -74,11 +74,25 @@ a {
   background: transparent;
   color: #fff;
   border: 2px solid #fff;
-  font-size: 3vw
+  font-size: 1.5vw
 }
 
 .btn-transparent:hover {
   background: #fff;
   color: #fe7a32;
   border: 2px solid #fff;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  text-align: center;
+}
+
+.footer p{
+  color: #ffffff;
+  margin-top: 15px;
+  font-size: 20px;
 }
