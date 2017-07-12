@@ -101,20 +101,16 @@ a {
   width: 100%;
 }
 
-
 #mobile{
     display: none;
 }
 #desktop{
     display: inline-block;
 }
-@media only screen
-    and (max-device-width : 667px)
-    and (orientation : portrait)
-    and (-webkit-min-device-pixel-ratio : 2)
-{
+
+@media (max-width : 667px){
     #mobile{
-        display: inline-block;
+        display: block;
     }
 
     #desktop{
