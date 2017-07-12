@@ -19,8 +19,9 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Actor', sans-serif;
   font-size: 24px;
+  font-weight: 300;
   line-height: 26px;
   text-align: center;
   width:100%;
@@ -60,7 +61,7 @@ a {
 }
 
 #fn-title {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Actor', sans-serif;
   font-size: 7vw;
   font-weight: bolder;
   text-align: center;
