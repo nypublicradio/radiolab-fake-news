@@ -3,9 +3,13 @@ html{
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Muli', sans-serif;
   margin-bottom:50px;
   padding-top: 70px
+}
+
+h2, h3{
+  font-family: 'Futura', sans-serif;
 }
 
 
@@ -19,16 +23,20 @@ body {
   border-bottom: none;
 }
 #fn-title {
-  font-family: 'Actor', sans-serif;
+  font-family: 'Futura', sans-serif;
   font-size: calc(20px + 4vw);
   text-align: center;
 }
-#toptext {
+#toptag {
+  font-style: italic;
 }
 
 .jumbotron{
-  background-image:url("img/rl300.png");
-  background-size: cover;
+  background-color: #fff;
+  text-align: justify;
+}
+.jumbotron p{
+  font-size: 20px;
 }
 .jumbotron h1 {
   font-size: 50px;
@@ -59,4 +67,13 @@ body {
 .footer p{
   color: #ffffff;
   margin-top: 15px;
+}
+
+
+@media only screen and (min-width: 1450px) {
+
+   #fn-title{
+     font-size: 75px;
+   }
+
 }
