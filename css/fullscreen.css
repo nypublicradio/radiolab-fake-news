@@ -1,8 +1,11 @@
 body {
   background: #000;
+  color: #fff;
 }
-a {
-  color: #ff0;
+
+body a{
+  color: inherit;
+  text-decoration: none;
 }
 
 .cover {
@@ -76,14 +79,21 @@ a {
   color: #fff;
   border: 2px solid #fff;
   font-size: 20px;
-  font-size: calc(10px + .5vw);;
+  font-size: calc(10px + .5vw);
   padding: 10px 20px;
   border-radius: 8px;
 }
 
+
 .btn-transparent:hover {
   background: #fff;
   color: #fe7a32;
+  text-decoration: none;
+}
+
+.btn-transparent a:hover {
+  color: #fe7a32;
+  text-decoration: none;
 }
 
 .footer {
