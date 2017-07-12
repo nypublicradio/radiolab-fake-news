@@ -24,7 +24,7 @@ h2, h3{
 }
 #fn-title {
   font-family: 'Futura', sans-serif;
-  font-size: calc(20px + 3.5vw);
+  font-size: calc(18px + 3.5vw);
   text-align: center;
 }
 #toptag {
@@ -39,8 +39,8 @@ h2, h3{
 .jumbotron p{
   font-size: 20px;
 }
-.jumbotron h1 {
-  font-size: 50px;
+.jumbotron h2 {
+  font-size: 28px;
 }
 
 .navbar-brand{
