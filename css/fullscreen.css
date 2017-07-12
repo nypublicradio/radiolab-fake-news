@@ -100,3 +100,24 @@ a {
 .container{
   width: 100%;
 }
+
+
+#mobile{
+    display: none;
+}
+#desktop{
+    display: inline-block;
+}
+@media only screen
+    and (max-device-width : 667px)
+    and (orientation : portrait)
+    and (-webkit-min-device-pixel-ratio : 2)
+{
+    #mobile{
+        display: inline-block;
+    }
+
+    #desktop{
+        display: none;
+    }
+}
