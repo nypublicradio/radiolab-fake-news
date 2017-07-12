@@ -5,7 +5,7 @@ html{
 body {
   font-family: 'Muli', sans-serif;
   margin-bottom:50px;
-  padding-top: 70px
+  padding-top: 70px;
 }
 
 h2, h3{
@@ -24,11 +24,12 @@ h2, h3{
 }
 #fn-title {
   font-family: 'Futura', sans-serif;
-  font-size: calc(20px + 4vw);
+  font-size: calc(20px + 3.5vw);
   text-align: center;
 }
 #toptag {
   font-style: italic;
+  white-space: nowrap;
 }
 
 .jumbotron{
