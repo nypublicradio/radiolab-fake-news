@@ -67,20 +67,21 @@ $('#volume').on('click', function(){
 });
 
 
-$('#control').on('click', function(){
+
+
+// Play/Pause Controls
+
+/*$('#control').on('click', function(){
   tv.pauseVideo();
 	$('#control').toggleClass('glyphicon-pause')
 	$('#control').toggleClass('glyphicon-play');
-});
-
-// Play/Pause Controls
-/* $('#control').on('click', function(){
-  $('#tv').toggleClass('pause');
+});*/
+ /*$('#control').on('click', function(){
   if($('#tv').hasClass('pause')){
     tv.pauseVideo();
   } else {
-    tv.pauseVideo();
+		return;
   }
 	$('#control').toggleClass('glyphicon-pause')
 	$('#control').toggleClass('glyphicon-play');
-}); */
+});*/
