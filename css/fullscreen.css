@@ -76,7 +76,7 @@ a {
   color: #fff;
   border: 2px solid #fff;
   font-size: 20px;
-  font-size: 1.5vw;
+  font-size: calc(10px + .5vw);;
   padding: 10px 20px;
   border-radius: 8px;
 }
@@ -115,5 +115,13 @@ a {
 
     #desktop{
         display: none;
+    }
+    .mobilevid{
+      margin-top: 0%;
+    }
+
+    .cover .hi {
+      position: relative;
+      top: 15%;
     }
 }
