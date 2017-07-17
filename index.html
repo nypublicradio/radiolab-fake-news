@@ -2,11 +2,12 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>the future of fake news</title>
+    <title>Future of Fake News</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet">
     <link rel="stylesheet" href="css/fullscreen.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/2b4a4d9744.js"></script>
   </head>
 
   <body>
@@ -19,18 +20,33 @@
       <div class="hi">
         <span id="fn-title">FUTURE OF FAKE NEWS</span><br><br>
         <br>
-        <div class="btn-group" role="group">
+        <div class="btn-group" role="group" id="continue">
           <a href="howto.html"><button type="button" class="btn btn-transparent btn-xl ">
             CONTINUE &nbsp;&#10095;</button>
         </div></a>
+
       </div>
+
+
+
       <footer class="footer" id="desktop">
+
         <div class="container">
-          <p>
-          <!--<span id="control" class="glyphicon glyphicon-pause"></span>-->
-            <span id="volume" class="glyphicon glyphicon-volume-up"></span>
-          </p>
-        </div>
+
+            <span id="volume" class="glyphicon glyphicon-volume-up pull-left"></span>
+            <ul class="dropup pull-right">
+                <span id="share" class="glyphicon glyphicon-share" data-toggle="dropdown"></span>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#"><i class="fa fa-facebook-official"></i> Facebook</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter-square"></i> Twitter</a>
+                </li>
+              </ul>
+            </ul>
+       </div>
+
       </footer>
   </div>
   	<div class="tv" id="desktop">
@@ -38,8 +54,8 @@
   	</div>
 
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/fullscreen.js"></script>
 
 

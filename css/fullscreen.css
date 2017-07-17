@@ -8,6 +8,10 @@ body a{
   text-decoration: none;
 }
 
+#continue {
+  display: none;
+}
+
 .cover {
   position: absolute;
   top: 0;
@@ -22,7 +26,7 @@ body a{
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-family: 'Actor', sans-serif;
+  font-family: 'Futura', sans-serif;
   font-size: 24px;
   font-weight: 300;
   line-height: 26px;
@@ -70,9 +74,7 @@ body a{
   text-decoration: none;
   color: #fff;
 }
-#fn-title:hover {
-  color: #fe7a32;
-}
+
 .btn-transparent {
   background: transparent;
   color: #fff;
@@ -99,7 +101,7 @@ body a{
   position: absolute;
   bottom: 0;
   width: 100%;
-  text-align: right;
+  text-align: left;
 }
 
 .footer p{
@@ -108,6 +110,19 @@ body a{
 }
 .container{
   width: 100%;
+  font-size: 20px;
+}
+
+
+.dropup {
+  display: inline-block;
+  list-style: none;
+}
+.dropdown-menu  {
+  font-size: 20px;
+  color: #fff;
+  white-space: nowrap;
+  width: 20px;
 }
 
 #mobile{
@@ -133,4 +148,12 @@ body a{
       position: relative;
       top: 30%;
     }
+}
+
+@media only screen and (max-width: 1450px) {
+
+   .jumbotron{
+     font-size: 2em;
+   }
+
 }
