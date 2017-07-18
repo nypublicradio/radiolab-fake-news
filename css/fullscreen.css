@@ -101,13 +101,11 @@ body a{
   position: absolute;
   bottom: 0;
   width: 100%;
-  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
 }
 
-.footer p{
-  color: #ffffff;
-  font-size: 20px;
-}
 .container{
   width: 100%;
   font-size: 20px;
@@ -117,12 +115,46 @@ body a{
 .dropup {
   display: inline-block;
   list-style: none;
+  width: 50px;
+  right: 0;
 }
 .dropdown-menu  {
   font-size: 20px;
-  color: #fff;
   white-space: nowrap;
-  width: 20px;
+  min-width: 20px;
+  text-align: center;
+  right: -15px;
+  position: absolute;
+  background: none;
+  border: 2px solid white;
+}
+
+.dropdown-menu>li>a:hover {
+  background: none;
+}
+
+.dropdown-menu::before {
+  position: absolute;
+  bottom: -9px;
+  right: 0px;
+  display: inline-block;
+  border-right: 8px solid transparent;
+  border-top: 8px solid white;
+  border-left: 8px solid transparent;
+  content: '';
+}
+
+#share{
+  -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+.dropdown-menu i {
+  color: #fff;
 }
 
 #mobile{
