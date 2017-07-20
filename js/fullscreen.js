@@ -1,3 +1,4 @@
+// Continue button animation
 $(document).ready(function() {
   setTimeout(function() {
     $("#continue").slideDown(600);
@@ -14,13 +15,15 @@ var tv,
 var vid = [
 			{'videoId': 'QDyjUIsD-wQ', 'startSeconds': 115, 'endSeconds': 300, 'suggestedQuality': 'hd720'},
 		],
-		randomVid = Math.floor(Math.random() * vid.length),
-    currVid = randomVid;
-
-$('.hi em:last-of-type').html(vid.length);
-
+    currVid = 0;
 function onYouTubePlayerAPIReady(){
-  tv = new YT.Player('tv', {events: {'onReady': onPlayerReady, 'onStateChange': onPlayerStateChange}, playerVars: playerDefaults});
+  tv = new YT.Player('tv', {
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    },
+    playerVars: playerDefaults
+  });
 }
 
 function onPlayerReady(){
@@ -28,21 +31,15 @@ function onPlayerReady(){
 }
 
 function onPlayerStateChange(e) {
-  if (e.data === 1){
+  if (e.data === -1){
     $('#tv').addClass('active');
-    $('.hi em:nth-of-type(2)').html(currVid + 1);
   } else if (e.data === 2){
-    $('#tv').removeClass('active');
-    if(currVid === vid.length - 1){
-      currVid = 0;
-    } else {
-      currVid++;
-    }
     tv.loadVideoById(vid[currVid]);
     tv.seekTo(vid[currVid].startSeconds);
   }
 }
 
+// Video Rescaling
 function vidRescale(){
 
   var w = $(window).width()+200,
@@ -83,12 +80,13 @@ $('#volume').on('click', function(){
 	$('#control').toggleClass('glyphicon-pause')
 	$('#control').toggleClass('glyphicon-play');
 });*/
- /*$('#control').on('click', function(){
+$('#control').on('click', function(){
+  $('#tv').toggleClass('pause');
   if($('#tv').hasClass('pause')){
     tv.pauseVideo();
   } else {
-		return;
+    tv.playVideo();
   }
-	$('#control').toggleClass('glyphicon-pause')
-	$('#control').toggleClass('glyphicon-play');
-});*/
+	$('#control').toggleClass('glyphicon-play')
+	$('#control').toggleClass('glyphicon-pause');
+});
