@@ -17,7 +17,10 @@ h2, h3{
   max-width: 880px;
 }
 
-
+.rlplayer {
+  height: 130px !important;
+  margin-bottom: 30px;
+}
 
 /* A head of the game */
 .page-header {
