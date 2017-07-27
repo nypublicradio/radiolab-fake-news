@@ -1,5 +1,14 @@
 // Animations
+function isMobile() {
+return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+if (!isMobile()) {
+//place script you don't want to run on mobile here
+
 $(document).ready(function() {
+  $("#continue").hide();
+  $("#fn-title").hide();
   setTimeout(function() {
     $("#continue").slideDown(600);
   }, 10000);
@@ -10,6 +19,10 @@ $(document).ready(function() {
     $(".tv").fadeOut(600);
   }, 73000);
 });
+
+}
+
+
 
 
 var tag = document.createElement('script');
