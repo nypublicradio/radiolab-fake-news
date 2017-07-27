@@ -3,6 +3,12 @@ $(document).ready(function() {
   setTimeout(function() {
     $("#continue").slideDown(600);
   }, 10000);
+  setTimeout(function() {
+    $("#fn-title").slideDown(600);
+  }, 37000);
+  setTimeout(function() {
+    $(".tv").fadeOut(600);
+  }, 73000);
 });
 
 

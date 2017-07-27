@@ -22,7 +22,7 @@ body a{
 }
 .cover .hi {
   position: absolute;
-  top: 75%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
@@ -73,6 +73,7 @@ body a{
   text-align: center;
   text-decoration: none;
   color: #fff;
+  display: none;
 }
 
 .btn-transparent {
