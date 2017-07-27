@@ -8,9 +8,6 @@ body a{
   text-decoration: none;
 }
 
-#continue {
-  display: none;
-}
 
 .cover {
   position: absolute;
@@ -73,7 +70,6 @@ body a{
   text-align: center;
   text-decoration: none;
   color: #fff;
-  display: none;
 }
 
 .btn-transparent {
