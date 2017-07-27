@@ -11,7 +11,7 @@ $(document).ready(function() {
   $("#fn-title").hide();
   setTimeout(function() {
     $("#continue").slideDown(600);
-  }, 10000);
+  }, 37000);
   setTimeout(function() {
     $("#fn-title").fadeIn(600);
   }, 37000);
