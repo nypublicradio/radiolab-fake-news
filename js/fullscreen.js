@@ -85,7 +85,7 @@ $('#volume').on('click', function(){
   tv.pauseVideo();
 	$('#control').toggleClass('glyphicon-pause')
 	$('#control').toggleClass('glyphicon-play');
-});*/
+})
 $('#control').on('click', function(){
   $('#tv').toggleClass('pause');
   if($('#tv').hasClass('pause')){
@@ -95,4 +95,4 @@ $('#control').on('click', function(){
   }
 	$('#control').toggleClass('glyphicon-play')
 	$('#control').toggleClass('glyphicon-pause');
-});
+});*/
