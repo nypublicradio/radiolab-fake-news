@@ -11,10 +11,10 @@ $(document).ready(function() {
   $("#fn-title").hide();
   setTimeout(function() {
     $("#continue").slideDown(600);
-  }, 37000);
+  }, 73000);
   setTimeout(function() {
     $("#fn-title").fadeIn(600);
-  }, 37000);
+  }, 73000);
   setTimeout(function() {
     $(".tv").fadeOut(600);
   }, 73000);
@@ -61,8 +61,8 @@ function onPlayerStateChange(e) {
 // Video Rescaling
 function vidRescale(){
 
-  var w = $(window).width()+200,
-    h = $(window).height()+200;
+  var w = $(window).width()+100,
+    h = $(window).height()+100;
 
   if (w/h > 16/9){
     tv.setSize(w, w/16*9);
