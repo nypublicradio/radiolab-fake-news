@@ -13,7 +13,7 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 var tv,
 		playerDefaults = {autoplay: 1, autohide: 1, modestbranding: 0, rel: 0, showinfo: 0, controls: 0, disablekb: 1, enablejsapi: 1, iv_load_policy: 3};
 var vid = [
-			{'videoId': 'QDyjUIsD-wQ', 'startSeconds': 115, 'endSeconds': 300, 'suggestedQuality': 'hd720'},
+			{'videoId': 'lbwlVwNWLzU', 'startSeconds': 13, 'endSeconds': 70, 'suggestedQuality': 'hd720'},
 		],
     currVid = 0;
 function onYouTubePlayerAPIReady(){
