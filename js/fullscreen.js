@@ -1,4 +1,4 @@
-// Continue button animation
+// Animations
 $(document).ready(function() {
   setTimeout(function() {
     $("#continue").slideDown(600);
