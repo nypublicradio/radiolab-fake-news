@@ -122,7 +122,7 @@ body a{
   text-align: center;
   right: -15px;
   position: absolute;
-  background: none;
+  background: #fff;
   border: 2px solid white;
 }
 
@@ -151,7 +151,7 @@ body a{
 }
 
 .dropdown-menu i {
-  color: #fff;
+  color: #000;
 }
 
 #mobile{
