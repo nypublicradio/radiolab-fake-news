@@ -23,7 +23,7 @@ body a{
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-family: 'Futura', sans-serif;
+  font-family: 'Futura', "Trebuchet MS", Arial, sans-serif;
   font-size: 24px;
   font-weight: 300;
   line-height: 26px;
@@ -65,7 +65,7 @@ body a{
 }
 
 #fn-title {
-  font-family: 'Futura', sans-serif;
+  font-family: 'Futura', "Trebuchet MS", Arial, sans-serif;
   font-size: 6vw;
   text-align: center;
   text-decoration: none;
