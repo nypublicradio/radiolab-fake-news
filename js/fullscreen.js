@@ -32,7 +32,7 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 var tv,
 		playerDefaults = {autoplay: 1, autohide: 1, modestbranding: 0, rel: 0, showinfo: 0, controls: 0, disablekb: 1, enablejsapi: 1, iv_load_policy: 3};
 var vid = [
-			{'videoId': 'u1fxu5RrM4w', 'startSeconds': 0, 'endSeconds': 83, 'suggestedQuality': 'hd720'},
+			{'videoId': 'vprETB4dzNE', 'startSeconds': 0, 'endSeconds': 83, 'suggestedQuality': 'hd720'},
 		],
     currVid = 0;
 function onYouTubePlayerAPIReady(){
