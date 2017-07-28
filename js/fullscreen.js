@@ -11,13 +11,13 @@ $(document).ready(function() {
   $("#fn-title").hide();
   setTimeout(function() {
     $("#continue").slideDown(600);
-  }, 73000);
+  }, 83000);
   setTimeout(function() {
     $("#fn-title").fadeIn(600);
-  }, 73000);
+  }, 83000);
   setTimeout(function() {
-    $(".tv").fadeOut(600);
-  }, 73000);
+    $(".tv").remove();
+  }, 83000);
 });
 
 }
@@ -32,7 +32,7 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 var tv,
 		playerDefaults = {autoplay: 1, autohide: 1, modestbranding: 0, rel: 0, showinfo: 0, controls: 0, disablekb: 1, enablejsapi: 1, iv_load_policy: 3};
 var vid = [
-			{'videoId': 'qJMQyzlJvLg', 'startSeconds': 0, 'endSeconds': 73, 'suggestedQuality': 'hd720'},
+			{'videoId': 'u1fxu5RrM4w', 'startSeconds': 0, 'endSeconds': 83, 'suggestedQuality': 'hd720'},
 		],
     currVid = 0;
 function onYouTubePlayerAPIReady(){
@@ -61,8 +61,8 @@ function onPlayerStateChange(e) {
 // Video Rescaling
 function vidRescale(){
 
-  var w = $(window).width()+100,
-    h = $(window).height()+100;
+  var w = $(window).width()+25,
+    h = $(window).height()+25;
 
   if (w/h > 16/9){
     tv.setSize(w, w/16*9);
