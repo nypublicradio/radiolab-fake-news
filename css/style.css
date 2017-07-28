@@ -17,6 +17,11 @@ h2, h3{
   max-width: 880px;
 }
 
+.caption p{
+  text-align: left;
+  size:14px;
+}
+
 .rlplayer {
   height: 130px !important;
   margin-bottom: 30px;
@@ -78,6 +83,7 @@ h2, h3{
 .footer a{
   color: #ffffff;
 }
+
 
 
 @media only screen and (min-width: 1450px) {
